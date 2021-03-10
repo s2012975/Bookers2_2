@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bookers2</title>
+    <title>Testapp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,16 +9,18 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-　<header>
-　  <%= render "layouts/header" %>
-　</header>
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= render "layouts/header" %>
+
   
-  <footer>
-    <%= render "layouts/footer" %>
-  </footer>
+    <main>
+      <%= yield %>
+    </main>
+    
+    <footer>
+      <%= render "layouts/footer" %>
+    </footer>
+  
+
   
 </html>
